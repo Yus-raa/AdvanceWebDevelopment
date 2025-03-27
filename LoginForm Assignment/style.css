@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     height: 100%;
     width: 100%;
@@ -38,8 +43,14 @@ body{
     height: 350px;
     width: 300px;
 }
-.input-text{
+.inputtext{
     width: 220px;
+}
+.input-text{
+    width: 800px;
+    margin: 5px;
+    /* border: 1px solid purple; */
+    font-size: 18px;
 }
 .lg-frm{
     padding-top: 20px;
@@ -54,10 +65,6 @@ body{
     font-size: 16px;
 }
 
-.Personal-info{
-    height: 400px;
-   width: 750px;
-}
 .btn, button{
     text-decoration: none;
     padding: 5px 85px;
@@ -68,19 +75,52 @@ body{
     font-weight: 900;
     border: 2px solid white;
 }
-.info-frm{
-    height: 260px;
+/* ------ */
+.register{
+    height: 100%;
     width: 100%;
-    padding:0px 20px;
-    column-count: 2;
 }
-.col{
+.register .top{
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(4, 53, 13);
+}
+.register h4{
+    color: white;
+    font-size: 30px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    border-bottom: 1px solid black;
+    font-size: 27px;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-self: center;
+}
+.note{
+    padding: 10px;
+    display: flex;
+    justify-self: center;
+    font-style: italic;
+    color: gray;
+}
+.form{
+    border: 1px solid black;
+    margin: 0px 100px 50px 100px;
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
-    height:260px ;
-    padding: 0px 20px;
-    margin: 0 20px 10px 20px;
+    align-items: center;
 }
-.rd{
-    float: left;
+#regstr{
+    margin: 25px;
+    width: 800px;
+    padding: 10px;
+    background-color: rgb(4, 53, 13);
+    color: aliceblue;
 }

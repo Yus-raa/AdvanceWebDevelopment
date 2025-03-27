@@ -7,35 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-        <video autoplay muted loop id="background">
-            <source src="./images/0314.mp4" type="video/mp4">
-        </video>
-        <img id="logo" src="./images/UAF-logo.png" alt="logo">
-
-        <div class="container Personal-info">
-            <h4 style="font-size: large;">University of Agriculture</h4>
-            <form  action="">
-                <div class="info-frm">
-                    <div class="col">
-                        <h2>Personal Information</h2>
+        <div class="register">
+            <div class="top">
+                <h4>University of Agriculture</h4>
+            </div>
+            <p class="note">Please fill out this form with accurate and complete details.</p>
+            <form class="form" action="">
+                        <h2 class="heading">Personal Information</h2>
                         <label class="input-text" for="name">Your Name:</label>
                         <input class="input-text" id="name" type="text">
                         <br>
                         <label class="input-text" for="fname">Father name</label>
                         <input class="input-text" id="fname" type="text">
                         <br>
-                        <label for="gender">What is Your Gender?
+                        <label class="input-text" for="gender">What is Your Gender?
                         <br>
-                        <input class="rd" type="radio" name="gender" value="Female">
+                        <input style="margin: 10px;" class="rd" type="radio" name="gender" value="Female"> Female
                         <br>
-                        <input class="rd" type="radio" name="gender" value="Male">
+                        <input style="margin: 10px;" class="rd" type="radio" name="gender" value="Male"> Male
                         </label>
-                    </div>
-
-                    <div class="col">
-                        <h2>Education</h2>
-                        <label for="">What is Your Education?</label>
+                        <hr>
+                        <h2 class="heading">Education</h2>
+                        <label class="input-text" for="">What is Your Education?</label>
                         <input class="input-text" list="degrees" name="degree" placeholder="Education">
                         <datalist id="degrees">
                             <option value="Intermediate">
@@ -43,7 +36,7 @@
                             <option value="Masters">
                         </datalist>
                         <br>
-                        <label for="">Field you want to apply for?</label>
+                        <label class="input-text" for="">Field you want to apply for?</label>
                         <input class="input-text" list="fields" name="field" placeholder="Field">
                         <datalist id="fields">
                             <option value="Bio Informatics">
@@ -53,17 +46,16 @@
                             <option value="Software Engineering">
                         </datalist>
                         <br>
-                        <label for="">Degree you want to apply for?</label>
+                        <label class="input-text" for="">Degree you want to apply for?</label>
                         <input class="input-text" list="fields" name="field" placeholder="Field">
                         <datalist id="fields">
                             <option value="Bachelors">
                             <option value="Masters">
                             <option value="Phd">
                         </datalist>
-                    </div>
-                </div>
+                        <button id="regstr">Submit</button>
             </form>
-            <button>Submit</button>
+            
         </div>
 </body>
 </html>
